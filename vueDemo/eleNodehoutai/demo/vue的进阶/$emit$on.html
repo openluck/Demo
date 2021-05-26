@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$emit 和 $on</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <!-- 
+    vue中使用 $emit(eventName) 触发事件，
+    使用 $on(eventName) 监听事件
+
+    $on 是用来在监听(注册)自定义事件的。
+
+      vm.$on(event, callback)
+      参数：
+        1:event {string | Array} (自定义事件的名称，可以使用数组的方式复数注册。数组方式必须在2.2.0+中才支持)
+        2:callback {Function} (自定义事件触发后，所执行的方法、函数)
+
+      $emit 是手动触发当前实例上的一个指定事件。
+      vm.$emit(eventName, [...args])
+      参数：
+        1:eventName {string} (需要触发的事件名称)
+        2:[...args] (传递的参数，多个参数用数组，单个参数就可以直接用参数本身的格式)
+
+
+      个人理解 ：
+        $on和$emit进行事件的耦合 
+   -->
+  <div id="root">
+    <button @click="boost">触发事件</button>
+  </div>
+  <script>
+    new Vue({
+      el: '#root',
+      data() {
+        return {
+          message: 'hello vue'
+        }
+      },
+      created() {
+        // 第一个参数是事件名， 第二个参数是 事件的执行方法 
+        this.$on('eventName', this.handleEvents) // 事件的定义
+        // this.$on(['eventName1', 'eventName2'], this.handleEvents) // 事件的定义
+      },
+      methods: {
+        handleEvents(e) {
+          console.log(this.message, e)
+        },
+        boost() {
+          this.$emit('eventName1', '$emit事件传递的参数') // 事件的消费
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

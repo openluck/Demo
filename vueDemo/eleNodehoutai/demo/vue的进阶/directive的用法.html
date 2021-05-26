@@ -1,0 +1,60 @@
+<html>
+
+<head>
+  <title>directive 用法-指令</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="root">
+    <div v-loading="isLoading">{{data}}</div>
+    <button @click="update">更新</button>
+  </div>
+  <script>
+    // 自定义指令
+    // 第一个参数是指令名
+    // 第二个参数是一个对象，官方文档有四个定义好的方法
+    Vue.directive('loading', {
+      update(el, binding, vnode) {
+        if (binding.value) {
+          const div = document.createElement('div')
+          div.innerText = '加载中...'
+          div.setAttribute('id', 'loading')
+          div.style.position = 'absolute'
+          div.style.left = 0
+          div.style.top = 0
+          div.style.width = '100%'
+          div.style.height = '100%'
+          div.style.display = 'flex'
+          div.style.justifyContent = 'center'
+          div.style.alignItems = 'center'
+          div.style.color = 'white'
+          div.style.background = 'rgba(0, 0, 0, .7)'
+          document.body.append(div)
+        } else {
+          document.body.removeChild(document.getElementById('loading'))
+        }
+      }
+    })
+    new Vue({
+      el: '#root',
+      data() {
+        return {
+          isLoading: false,
+          data: ''
+        }
+      },
+      methods: {
+        update() {
+          this.isLoading = true
+          setTimeout(() => {
+            this.data = '用户数据'
+            this.isLoading = false
+          }, 3000)
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
