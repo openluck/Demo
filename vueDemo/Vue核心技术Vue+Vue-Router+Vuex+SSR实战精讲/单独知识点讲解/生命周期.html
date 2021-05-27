@@ -1,0 +1,96 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: OpenLcuk
+ * @Date: 2021-05-27 18:00:11
+ * @LastEditors: OpenLcuk
+ * @LastEditTime: 2021-05-27 18:15:08
+-->
+<html>
+
+<head>
+  <title>directive 用法-指令</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="root">
+  </div>
+  <script>
+
+    new Vue({
+      el: '#root',
+      data() {
+        return {
+          isLoading: false,
+          data: ''
+        }
+      },
+      // 生命周期都是函数，也是钩子函数
+      beforeCreate: function () {
+        // 不要去修改数据 ，不要进行data中的数据修改 ，进行数据请求的最早也要在created中做。
+        console.group('------beforeCreate创建前状态------');
+        console.log("%c%s", "color:red", "el     : " + this.$el); //undefined
+        console.log("%c%s", "color:red", "data   : " + this.$data); //undefined 
+        console.log("%c%s", "color:red", "message: " + this.message)
+        console.log('挂载的元素对象', this.$el);  // 通过this.$el可以获取挂载的根元素
+      },
+      created: function () {
+        console.group('------created创建完毕状态------');
+        console.log("%c%s", "color:red", "el     : " + this.$el); //undefined
+        console.log("%c%s", "color:red", "data   : " + this.$data); //已被初始化 
+        console.log("%c%s", "color:red", "message: " + this.message); //已被初始化
+        console.log('挂载的元素对象', this.$el);  
+      },
+      beforeMount: function () {
+        console.group('------beforeMount挂载前状态------');
+        console.log("%c%s", "color:red", "el     : " + (this.$el)); //已被初始化
+        console.log(this.$el);
+        console.log("%c%s", "color:red", "data   : " + this.$data); //已被初始化  
+        console.log("%c%s", "color:red", "message: " + this.message); //已被初始化
+        console.log('挂载的元素对象', this.$el);  
+      },
+      mounted: function () {
+        console.group('------mounted 挂载结束状态------');
+        console.log("%c%s", "color:red", "el     : " + this.$el); //已被初始化
+        console.log(this.$el);
+        console.log("%c%s", "color:red", "data   : " + this.$data); //已被初始化
+        console.log("%c%s", "color:red", "message: " + this.message); //已被初始化 
+        console.log('挂载的元素对象', this.$el);  
+      },
+      beforeUpdate: function () {
+        console.group('beforeUpdate 更新前状态===============》');
+        console.log("%c%s", "color:red", "el     : " + this.$el);
+        console.log(this.$el);
+        console.log("%c%s", "color:red", "data   : " + this.$data);
+        console.log("%c%s", "color:red", "message: " + this.message);
+        console.log('挂载的元素对象', this.$el);  
+      },
+      updated: function () {
+        console.group('updated 更新完成状态===============》');
+        console.log("%c%s", "color:red", "el     : " + this.$el);
+        console.log(this.$el);
+        console.log("%c%s", "color:red", "data   : " + this.$data);
+        console.log("%c%s", "color:red", "message: " + this.message);
+      },
+      beforeDestroy: function () {
+        console.group('beforeDestroy 销毁前状态===============》');
+        console.log("%c%s", "color:red", "el     : " + this.$el);
+        console.log(this.$el);
+        console.log("%c%s", "color:red", "data   : " + this.$data);
+        console.log("%c%s", "color:red", "message: " + this.message);
+      },
+      destroyed: function () {
+        console.group('destroyed 销毁完成状态===============》');
+        console.log("%c%s", "color:red", "el     : " + this.$el);
+        console.log(this.$el);
+        console.log("%c%s", "color:red", "data   : " + this.$data);
+        console.log("%c%s", "color:red", "message: " + this.message)
+      }
+      
+      // 还可以通过render函数渲染template
+    })
+  </script>
+</body>
+
+</html>
