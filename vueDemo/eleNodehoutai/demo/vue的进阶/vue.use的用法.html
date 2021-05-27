@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <title>Vue.use 用法</title>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -23,7 +24,6 @@
     <button @click="showLoading">显示Loading</button>
   </div>
   <script>
-
     const loadingPlugin = {
       install: function (vm) {
         const LoadingComponent = vm.extend({
@@ -56,8 +56,9 @@
       }
     }
 
+    // 自己写了一个插件，通过vue.use来进行加载
     Vue.use(loadingPlugin)
-    
+
     new Vue({
       el: '#root',
       methods: {
