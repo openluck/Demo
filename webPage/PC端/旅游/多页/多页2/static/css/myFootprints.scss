@@ -1,0 +1,103 @@
+body {
+  text-align: center;
+  background: rgba(0,0,0,0.60);
+  color:#FFFFFF;
+}
+.my-photo{
+  margin-top: 14px;
+  img{
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+.my-name{
+  margin-top: 6px;
+  font-size: 14px;
+}
+.summary{
+  padding:5px 12px;
+  background: rgba(0,0,0,0.40);
+  border-radius: 26px;
+  font-size: 11px;
+  margin:20px 22.418% 16px 22.418%;
+}
+.route-time{
+  color:#EB4C5D;
+  font-size: 14px;
+}
+.route-country{
+  font-size: 14px;
+}
+.cd-container {
+  position: relative;
+  margin-bottom: 20px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    height: 100%;
+    width: 1px;
+    background:#B7C0C8;
+  }
+  .cd-timeline-block {
+    position: relative;
+    margin:0 0 10px 0;
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .dot {
+      position: absolute;
+      top: 10px;
+      left: 49.2%;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #B7C0C8;
+    }
+    &:nth-child(odd) .cd-timeline-content {
+      margin-left: 53.267%;
+      .month2{
+        display: none;
+      }
+    }
+    &:nth-child(even) .cd-timeline-content {
+      margin-right: 53.267%;
+      text-align: right;
+      .month1{
+        display: none;
+      }
+    }
+
+    .cd-timeline-content{
+      text-align: left;
+      span{
+        font-size: 13px;
+      }
+      p{
+        margin-top: 8px;
+        font-size: 11px;
+        color:#A0A0A0;
+      }
+    }
+  }
+}
+.btn-footprints-map {
+  position: fixed;
+  right: 20px;
+  bottom: 22px;
+  width: 65px;
+  height:65px;
+  padding-top:4px;
+  border-radius:50%;
+  text-align: center;
+  line-height: 65px;
+  background: rgba(0,0,0,0.60);
+  .icon{
+    font-size: 20px;
+    color:#FFFFFF;
+  }
+
+}

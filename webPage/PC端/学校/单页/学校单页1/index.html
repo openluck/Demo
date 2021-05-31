@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Off Canvas Template for Bootstrap</title>
+
+
+
+    <!-- 加载Bootstrap样式表 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 加载自定义样式表 -->
+    <link href="css/offcanvas.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body >
+  <div class="container">
+  <div class="row clearfix">
+    <div class="col-md-6 column" style="width:480px;">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation"style="background-image:url(images/15.jpg)">
+        <div class="navbar-header" style="padding-top:20px;margin-left:70px;">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="active" href="#"><font color="white"><B>学生</B></a>&nbsp|</font>&nbsp<a href="#"><font color="white"><B>教工</B></a>&nbsp|</font>&nbsp<a href="#"><font color="white"><B>校友</B></a>&nbsp|</font>&nbsp<a href="#"><font color="white"><B>考生</B></a>&nbsp|</font>&nbsp<a href="#"><font color="white"><B>访客</B></font></a>&nbsp&nbsp
+        </div>
+        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav" style="padding-top:5px;width:550px;">
+            <li >
+               <a href="#"><font color="white"><B><span class="glyphicon glyphicon-home
+" aria-hidden="true"></span>&nbsp信息门户</B></font></a>
+            </li>
+            <li>
+               <a href="#"><font color="white"><B><span class="glyphicon glyphicon-envelope
+
+" aria-hidden="true"></span>&nbsp邮箱系统</B></font></a>
+            </li>
+           <li>
+               <a href="#"><font color="white"><B><span class="glyphicon glyphicon-list-alt
+
+" aria-hidden="true"></span>&nbsp办公系统</B></font></a>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search"style="width:450px;">
+            <div class="form-group"style="width:270px;">
+              <input type="text" class="form-control" placeholder="搜索关键词..." name="INTEXT"
+ style="width:266px;"/><span class="input-group-btn">
+</span>
+            </div> <button type="submit" class="btn btn-default">搜索</button>
+          </form>
+         
+        </div>
+        
+      </nav><img src="images/2.jpg"width="300" height="100" />
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+  <ul class="nav navbar-nav navbar-right"style="margin-top:20px;">
+    <li class="visible-xs visible-sm"><a href="index.htm"><span class="glyphicon glyphicon-home"></span> 回到首页</a></li>
+
+    <li class="dropdown">
+      <a data-toggle="dropdown" role="button" aria-expanded="false" href="">学校概况</a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="学校简介.html">学校简介</a></li>
+        <li><a href="校园导览.html">校园导览</a></li>
+        <li><a href="百年校史.html">百年校史</a></li>
+        <li><a href="杰出校友.html">杰出校友</a></li>
+      </ul>
+</li>
+       
+       <li class="dropdown">
+      <a data-toggle="dropdown" role="button" aria-expanded="false" href="">机构设置</a>
+      
+      <ul class="dropdown-menu" role="menu">
+        
+        <li><a href="院系设置.html">院系设置</a></li>
+        <li><a href="xxgk/wdbs.htm">职能部门</a></li>
+        
+        <li><a href="xxgk/lrld.htm">直属单位</a></li>
+
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a data-toggle="dropdown" role="button" aria-expanded="false" href="xxgk/xxjj.htm">文化生活</a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="文体场馆.html">文体场馆</a></li>
+        <li><a href="xxgk/xxjj.htm">早期建筑群</a></li>
+        <li><a href="xxgk/wdbs.htm">工会活动</a></li>
+        <li><a href="xxgk/bnxs.htm">学生活动</a></li>
+        <li><a href="xxgk/lrld.htm">博物馆</a></li>
+        
+        
+      </ul>
+    </li>
+        <li class="dropdown">
+      <a data-toggle="dropdown" role="button" aria-expanded="false" href="xxgk/xxjj.htm">师资队伍</a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="xxgk/xxjj.htm">两院院士</a></li>
+        <li><a href="xxgk/wdbs.htm">人文社科资源</a></li>
+        <li><a href="xxgk/bnxs.htm">国家教学名师</a></li>
+        <li><a href="xxgk/lrld.htm">国家杰青</a></li>
+        <li><a href="xxgk/xrld.htm">长江学者</a></li>
+      </ul>
+    </li>
+        <li class="dropdown">
+      <a data-toggle="dropdown" role="button" aria-expanded="false" href="xxgk/xxjj.htm">人才培养</a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="xxgk/xxjj.htm">本科生教育</a></li>
+        <li><a href="xxgk/wdbs.htm">研究生教育</a></li>
+        <li><a href="xxgk/bnxs.htm">国际教育</a></li>
+        <li><a href="xxgk/lrld.htm">学生资助</a></li>
+        <li><a href="xxgk/xrld.htm">继续教育</a></li>
+      </ul>
+    </li>
+        <li class="dropdown">
+      <a data-toggle="dropdown" role="button" aria-expanded="false" href="xxgk/xxjj.htm">科学研究</a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="xxgk/xxjj.htm">2011计划</a></li>
+        <li><a href="xxgk/wdbs.htm">科研机构</a></li>
+        <li><a href="xxgk/bnxs.htm">学术期刊</a></li>
+        <li><a href="xxgk/lrld.htm">学科建设</a></li>
+        <li><a href="xxgk/xrld.htm">多学科交叉研究院</a></li>
+      </ul>
+    </li>
+       
+      </ul>
+    </div>
+  </div><br>
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <div class="carousel slide" id="carousel-118623">
+        <ol class="carousel-indicators">
+          <li class="active" data-slide-to="0" data-target="#carousel-118623">
+          </li>
+          <li data-slide-to="1" data-target="#carousel-118623">
+          </li>
+          <li data-slide-to="2" data-target="#carousel-118623">
+          </li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img alt="" src="images/11.jpg" />
+            <div class="carousel-caption">
+           <h4>
+                又是一年春好处
+              </h4>
+              <p>
+                春意渐浓，武大校园里的樱花也争先攀上枝头。
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img alt="" src="images/10.jpg" />
+            <div class="carousel-caption">
+              <h4>
+                毕业季
+              </h4>
+              <p>
+                2016年5月9日，武汉大学大四学子们在校园里拍照留念
+                
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img alt="" src="images/12.jpg" />
+            <div class="carousel-caption">
+              <h4>
+                赏樱
+              </h4>
+              <p>
+               学子们在课后纷纷结伴到著名的樱花大道观赏这一年一度的美景
+              </p>
+            </div>
+          </div>
+        </div> <a class="left carousel-control" href="#carousel-118623" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-118623" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+    </div>
+  </div><br>
+   <div style="background:#01814A;height:2px;"></div><br>
+  <font size="4" color="white"style="background:#006030;"><b>头条新闻</b></font>&nbsp<font color="gray">HEADLINE</font>
+  <br>
+  <div class="row clearfix">
+    <div class="col-md-4 column">
+      <img  src="images/19.jpg"width="300" height="200" />
+      <p><br>
+         <a href="">《自然》子刊同时发表李红良团队2篇论文</a><br>
+         拓展了对心肌肥厚及心衰机制的认识，有望成为临床治疗的新突破口。
+      </p>
+    </div>
+    <div class="col-md-4 column">
+      <ol>
+        <a href="">龙舟赛：同舟共济争上游</a><br>
+        “同城双星”龙舟友谊赛上，我校一举包揽三项目的冠军。<hr>
+        <a href="">山水体育竞风采</a><br>
+        龙舟竞渡，赛艇夺魁，足球争霸，武大健儿在珞珈山水间尤为夺目。<hr>
+        <a href="">破格晋升的背后</a><br>
+        创新教师考核激励机制，激发教学热情和动力，回归人才培养本位。
+       
+        
+      </ol>
+    </div>
+    <div class="col-md-4 column">
+      <ol>
+         <a href="">微爱珞珈，为爱出发（组图）</a><br>
+       首届“微爱珞珈”校园公益环跑赛捐赠总额接近20万元。<hr>
+        <a href="">“怎么讲”才能更出彩？</a><br>
+       要有别出心裁的总体设计，立体交叉的学术视野，其异如面的课堂风格。<hr>
+        <a href="">第七届杰出教学贡献校长奖得主</a><br>
+       刘青珍、徐才俊、易栋、侯安新、翻译教育团队、各有秘籍。
+       
+        
+      </ol>
+    </div>
+  </div>
+ <div style="background:#01814A;height:2px;"></div>
+ <div> <font  size="4" color="white"style="background:#006030;"><b>珞珈新闻</b></font>&nbsp<font color="gray">NEWS</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-option-horizontal
+" aria-hidden="true"></span><a href="">更多</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<font size="4" color="white"style="background:#006030;"><b>学术动态</b></font>&nbsp<font color="gray">ACADEMIC</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-option-horizontal
+" aria-hidden="true"></span><a href="">更多</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<font size="4" color="white"style="background:#006030;"><b>通知公告</b></font>&nbsp<font color="gray">INFO</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-option-horizontal
+" aria-hidden="true"></span><a href="">更多</a></div>
+<br>
+  <div class="row clearfix">
+    <div class="col-md-4 column">
+      <ul>
+        <a href="">为爱奔跑（组图）</a><br>
+        <a href="">@全体whuer：下一位风云学子就是你</a><br>
+        <a href="">【一线风采】无言的身影（组图）</a><br>
+       <a href="">【毕业感怀】驾着马车的肖老师</a><br>
+        <a href="">就这样望着你的脸（组图）</a><br>
+        <a href="">T台秀·珞珈梦（组图）</a><br>
+        <a href="">武大新媒体入选全国高校优秀网络栏目</a><br><hr>
+      </ul>
+    </div>
+    <div class="col-md-4 column">
+      <ul>
+         <a href="">澳门大学教授王苗谈茶馆与文化</a><br>
+        <a href="">李德仁：寻天问地一世情</a><br>
+        <a href="">中国专家首次当选亚非网诺空间报告员</a><br>
+       <a href="">【求是】坚持马院姓马</a><br>
+        <a href="">【珞珈群星】赵正峰：“城市遥感”之路</a><br>
+        <a href="">全国高校搜索大赛高手云集</a><br>
+        <a href="">全国高校澳生论坛畅论新常态</a><br><hr>
+      </ul>
+    </div>
+    <div class="col-md-4 column">
+      <ul>
+         <a href="">紧急通知</a><br>
+        <a href="">关于2016年部分节假日安排通知</a><br>
+        <a href="">武汉大学诚聘青年千人</a><br>
+       <a href="">2016年秋季武汉大学幼儿园招生公告</a><br>
+        <a href="">EMBA前沿讲座信息预告</a><br>
+        <a href="">珞珈讲坛第142讲预告</a><br>
+        <a href="">关于离职退休工门诊医药费报销的通知</a><br><hr >
+      </ul>
+    </div>
+  </div>
+  <div style="background:#01814A;height:2px;"></div>
+  <font size="4" color="white"style="background:#006030;"><b>专题网站</b></font>&nbsp<font color="gray">TOPICS</font>
+  
+  <div class="case-content" style="margin-top:10px;">
+  <div class="case-item">
+    <div class="ih-item circle effect1">
+      <a href="" target="_blank">
+        <div class="spinner"></div>
+        <div class="img"><img src="images/16.jpg" ></div>
+        <div class="info">
+          <div class="info-back">
+            <h3>网站1</h3>
+            <p>"微爱珞珈"校园公益活动</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  <div class="case-item">
+    <div class="ih-item circle effect1">
+      <a href="" target="_blank">
+        <div class="spinner"></div>
+        <div class="img"><img src="images/18.jpg"></div>
+        <div class="info">
+          <div class="info-back">
+            <h3>网站2</h3>
+            <p>校园歌曲30年庆典</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+   <div class="case-item">
+    <div class="ih-item circle effect1">
+      <a href="" target="_blank">
+        <div class="spinner"></div>
+        <div class="img"><img src="images/5.jpg"></div>
+        <div class="info">
+          <div class="info-back">
+            <h3>网站3</h3>
+            <p>本科教学审核</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+   <div class="case-item">
+    <div class="ih-item circle effect1">
+      <a href="" target="_blank">
+        <div class="spinner"></div>
+        <div class="img"><img src="images/17.png"></div>
+        <div class="info">
+          <div class="info-back">
+            <h3>网站4</h3>
+            <p>央视公益广告:山区支教</p>
+          </div>
+          <hr>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  </div><br>
+  <div class="row clearfix" style="background:#F0F0F0;height:170px;">
+    
+    <div id="divcss5" class="col-md-2 column" style="width:280px;top:30px; " >
+
+     <img src="images/24.jpg"width="120" height="120" />
+    </div>
+    <div class="col-md-6 column" style="width:250px;top:40px;">
+      <ol>
+        <a href="">学术委员会</a><br>
+        <a href="">图书馆</a><br>
+        <a href="">校友总会</a><br>
+       <a href="">基金会</a><br>
+        <a href="">领导信箱</a><br>
+      </ol>
+    </div>
+   <div class="col-md-4 column"style="top:40px;width:230px;">
+      <ul>
+         <a href="">信息公开</a><br>
+        <a href="">招投标信息</a><br>
+        <a href="">人才招聘</a><br>
+       <a href="">VPN通道</a><br>
+        <a href="">学生服务</a><br>
+      </ul>
+      <hr>
+    </div>
+    <div id="divcss5"class="col-md-4 column" style="top:40px;">
+     <img src="images/20.jpg"width="80" height="80" title="微信"/>&nbsp&nbsp
+     <img src="images/21.jpg"width="80" height="80"title="微博" />&nbsp&nbsp
+     <img src="images/22.jpg"width="60" height="60" title="应用"/>&nbsp&nbsp
+     <img src="images/23.jpg"width="80" height="80"title="珞珈山水" />
+    </div>
+  </div>
+
+    
+    
+ 
+  <div class="row clearfix">
+    <div class="col-md-12 column" style="background-image:url(images/15.jpg)">
+      <address style="margin-left:300px;"><font color="white"></font>&nbsp&nbsp <font color="white">by&nbsp2015级软件技术班&nbsp&nbsp&nbsp</font><br ><br> <font color="white">&nbsp&nbsp&nbsp&nbsp李倩</font><abbr title="Phone"  style="margin-left:450px;"><a href="#"><font color="white"><B>旧版主页</B></a>&nbsp|</font>&nbsp<a href="#"><font color="white"><B>联系我们</B></a>&nbsp|</font>&nbsp<a href="#"><font color="white"><B>网站地图</B></a>&nbsp|</font>&nbsp<a href="#"><font color="white"><B>信息中心</B></a>&nbsp|</font></address>
+    </div>
+  </div>
+</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- 加载bootstrap所必须的jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 加载bootstrap的js文件 -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <!-- 加载自定义的js文件 -->
+    <script src="js/offcanvas.js"></script>
+  </body>
+</html>

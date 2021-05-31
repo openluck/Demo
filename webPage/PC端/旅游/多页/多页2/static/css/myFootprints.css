@@ -1,0 +1,108 @@
+body {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
+}
+
+.my-photo {
+  margin-top: 14px;
+}
+.my-photo img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.my-name {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.summary {
+  padding: 5px 12px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 26px;
+  font-size: 11px;
+  margin: 20px 22.418% 16px 22.418%;
+}
+
+.route-time {
+  color: #EB4C5D;
+  font-size: 14px;
+}
+
+.route-country {
+  font-size: 14px;
+}
+
+.cd-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+.cd-container::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  background: #B7C0C8;
+}
+.cd-container .cd-timeline-block {
+  position: relative;
+  margin: 0 0 10px 0;
+}
+.cd-container .cd-timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-container .cd-timeline-block .dot {
+  position: absolute;
+  top: 10px;
+  left: 49.2%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #B7C0C8;
+}
+.cd-container .cd-timeline-block:nth-child(odd) .cd-timeline-content {
+  margin-left: 53.267%;
+}
+.cd-container .cd-timeline-block:nth-child(odd) .cd-timeline-content .month2 {
+  display: none;
+}
+.cd-container .cd-timeline-block:nth-child(even) .cd-timeline-content {
+  margin-right: 53.267%;
+  text-align: right;
+}
+.cd-container .cd-timeline-block:nth-child(even) .cd-timeline-content .month1 {
+  display: none;
+}
+.cd-container .cd-timeline-block .cd-timeline-content {
+  text-align: left;
+}
+.cd-container .cd-timeline-block .cd-timeline-content span {
+  font-size: 13px;
+}
+.cd-container .cd-timeline-block .cd-timeline-content p {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #A0A0A0;
+}
+
+.btn-footprints-map {
+  position: fixed;
+  right: 20px;
+  bottom: 22px;
+  width: 65px;
+  height: 65px;
+  padding-top: 4px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 65px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.btn-footprints-map .icon {
+  font-size: 20px;
+  color: #FFFFFF;
+}

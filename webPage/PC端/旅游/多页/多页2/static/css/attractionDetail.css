@@ -1,0 +1,150 @@
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+.head {
+  background-color: black;
+  color: #FFFFFF;
+  margin-top: 0;
+  padding: 22px 12px 16px 12px;
+}
+.head .attraction-name {
+  text-align: center;
+}
+.head .attraction-name .name-ch {
+  font-size: 20px;
+}
+.head .attraction-name .name-ch .destination {
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 12px;
+  line-height: 18px;
+  margin-left: 6px;
+  background-color: #EB4C5D;
+}
+.head .attraction-name .name-en {
+  font-size: 15px;
+}
+.head .label {
+  font-size: 13px;
+  margin-top: 47px;
+}
+.head .label span {
+  border: 1px solid #FFFFFF;
+  padding: 4px 12px;
+  display: inline-block;
+  margin-left: 8px;
+  border-radius: 16px;
+}
+.head .label em {
+  display: inline-block;
+  float: right;
+  padding-top: 4px;
+}
+.head .label .icon {
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.detail-container {
+  font-size: 13px;
+  color: #5A5A5A;
+}
+.detail-container li {
+  padding: 12px 4px 12px 4px;
+  border-bottom: 1px solid #F5F5F5;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.detail-container li .icon {
+  margin-right: 16px;
+  color: #5A5A5A;
+}
+.detail-container li .traffic {
+  display: flex;
+  display: -webkit-flex;
+}
+.detail-container li .traffic .info {
+  flex: 1;
+  -webkit-flex: 1;
+}
+.detail-container li .open-time {
+  display: flex;
+  display: -webkit-flex;
+}
+.detail-container li .open-time .info {
+  flex: 1;
+  -webkit-flex: 1;
+}
+.detail-container .introduction {
+  padding: 12px 16px 20px 16px;
+  line-height: 22px;
+}
+.detail-container .icon-phone {
+  float: right;
+}
+
+.routes {
+  padding-top: 16px;
+}
+.routes p {
+  padding-left: 16px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.routes .routes-list .routes-container {
+  margin-top: 12px;
+}
+.routes .routes-list .routes-container .routes-cover {
+  background-color: #101010;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 6px 6px 0 0;
+}
+.routes .routes-list .routes-container .routes-cover .routes-title {
+  font-size: 20px;
+}
+.routes .routes-list .routes-container .routes-cover .routes-attractions {
+  font-size: 11px;
+}
+.routes .routes-list .routes-container .extra-info {
+  margin-left: 16px;
+  margin-right: 16px;
+  border: 1px solid #F5F5F5;
+  border-radius: 0 0 6px 6px;
+  padding: 8px 0 12px 12px;
+  font-size: 10px;
+  color: #A4A4A4;
+  margin-bottom: 12px;
+}
+.routes .routes-list .routes-container .extra-info .important-information span {
+  margin-right: 12px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.routes .routes-list .routes-container .extra-info .tags {
+  margin-top: 4px;
+}
+.routes .routes-list .routes-container .extra-info .tags .tag-item {
+  border: 1px solid #C8C7CC;
+  border-radius: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-right: 6px;
+}
+.routes .routes-list .routes-container .extra-info .author {
+  margin-top: 16px;
+}
+.routes .routes-list .routes-container .extra-info .author img {
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.routes .routes-list .routes-container .extra-info .author .name-time {
+  margin-left: 8px;
+  vertical-align: middle;
+}

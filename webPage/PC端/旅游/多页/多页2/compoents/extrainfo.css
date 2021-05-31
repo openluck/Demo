@@ -1,0 +1,67 @@
+.relative-person {
+  padding: 16px 10px 0 16px;
+  font-size: 13px;
+  color: #525252;
+}
+.relative-person p {
+  color: #525252;
+  font-weight: 600;
+}
+.relative-person .photo-list {
+  white-space: nowrap;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.relative-person .photo-list li {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 6px;
+}
+
+.position--tags {
+  margin: 12px 12px 20px 12px;
+}
+
+.position---tags {
+  margin: 16px 12px 20px 12px;
+}
+
+.position-tags {
+  font-size: 15px;
+  color: #5A5A5A;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.position-tags .tag {
+  background-color: #F5F5F5;
+  border-radius: 3px;
+  padding: 5px 17px;
+  margin-right: 6px;
+  display: inline-block;
+}
+.position-tags .current {
+  background-color: #B7C0C8;
+  color: #FFFFFF;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  line-height: 49px;
+  background-color: #B7C0C8;
+  height: 49px;
+  position: fixed;
+  bottom: 0;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.footer .icon {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.is-right {
+  background-color: #EB4C5D;
+}
